@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import "./style.css";
+import "./style.scss";
 
 class Message extends Component {
   render() {
