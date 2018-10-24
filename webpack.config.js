@@ -1,12 +1,16 @@
+const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-  entry: "./src/main.js",
-  mode: "development",
+  entry: {
+    about: "./dist/about",
+    contact: "./dist/contact"
+  },
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   },
+  mode: "development",
   module: {
     rules: [
       {
